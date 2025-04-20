@@ -1,3 +1,0 @@
-# Hamza Ali
-
-## Welcome
