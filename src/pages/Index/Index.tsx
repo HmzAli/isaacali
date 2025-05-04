@@ -1,9 +1,10 @@
+import Layout from '../../components/Layout'
 
 function App() {
   return (
-    <>
+    <Layout>
       <div className="container">
-      <h1> Base website template </h1>
+        <h1> Base website template </h1>
 
         <div className="row"> 
           <div className="col-6">
@@ -14,7 +15,7 @@ function App() {
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   )
 }
 

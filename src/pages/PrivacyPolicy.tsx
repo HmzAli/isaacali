@@ -1,8 +1,14 @@
 
 // Privacy Policy page
 
+import Layout from "../components/Layout"
+
 const PrivacyPolicy = () => {
-  return <div data-content-id="privacy-policy">Privacy Policy</div>
+  return (
+    <Layout>
+      <div data-content-id="privacy-policy">Privacy Policy</div>
+    </Layout>
+  )
 }
 
 export default PrivacyPolicy
