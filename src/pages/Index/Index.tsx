@@ -1,6 +1,6 @@
 import Layout from '../../components/Layout'
 
-function App() {
+function Index() {
   return (
     <Layout>
       <div className="container">
@@ -19,4 +19,4 @@ function App() {
   )
 }
 
-export default App
+export default Index

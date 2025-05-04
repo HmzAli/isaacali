@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import './theme.scss'
 
 import Index from './pages/Index/Index.tsx'
-import PrivacyPolicy from './pages/PrivacyPolicy.tsx'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 import { BrowserRouter, Route, Routes } from 'react-router'
 

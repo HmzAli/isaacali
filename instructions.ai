@@ -1,0 +1,17 @@
+
+## Project contribution instructions
+
+Project structure is as follows:
+
+1. pages directory
+
+ - All pages should be added to this directory
+ - A new page should be added as a directory named with the page name e.g. Home, AboutUs
+ - Page name should be PascalCase or CamelCase
+ - Inside the page, there should be 2 files:
+   1. index.tsx - to contain page content in react markup
+   2. [PageName].scss, the styling for the page. It should follow directory name. 
+   3. [PageName].scss should import variables.scss file in following format
+   @use @use '../../variables' as *;
+
+- When Page.tsx component is create, it should contain skeleton react markup of the page

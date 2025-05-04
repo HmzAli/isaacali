@@ -1,0 +1,15 @@
+@use '../../variables' as *;
+
+.privacy-policy {
+  padding: 2rem 0;
+
+  h1 {
+    color: $color-primary;
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    color: $color-quaternary;
+    line-height: 1.6;
+  }
+} 
