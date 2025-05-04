@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.tsx'
 import { BrowserRouter, Route, Routes } from 'react-router'
 
-import PrivacyPolicy from './pages/privacy-policy.tsx'
+import PrivacyPolicy from './pages/PrivacyPolicy.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
