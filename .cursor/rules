@@ -1,0 +1,23 @@
+# Project Structure Rules for Pages
+
+## Directory Structure
+1. All pages must be created in the `pages/` directory
+2. Each page must be a separate directory (under the `pages` directory) with PascalCase naming (e.g. `Home`, `AboutUs`)
+
+## Required Files
+For each page directory `{PageName}`:
+
+1. Must contain `index.tsx` with:
+   - Basic React component structure
+   - Import for the corresponding SCSS file
+   - Skeleton markup with root div using page name as className (in lowercase, snake case e.g `about-us`)
+
+2. Must contain `{PageName}.scss` with:
+   - Required import at top: `@use '../../variables' as *;`
+   - Styles scoped to the page using the className matching the directory name (in lowercase)
+
+## Naming Conventions
+- Directory names: PascalCase (e.g. `ContactPage`)
+- SCSS files: Must exactly match directory name (e.g. `ContactPage.scss`)
+- React components: PascalCase.
+- SCSS class: Must be lowercase version of directory name in snake case (if applicable) (e.g. `.contact-page`)
