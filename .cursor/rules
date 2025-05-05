@@ -16,8 +16,13 @@ For each page directory `{PageName}`:
    - Required import at top: `@use '../../variables' as *;`
    - Styles scoped to the page using the className matching the directory name (in lowercase)
 
-## Naming Conventions
+## File naming Conventions
 - Directory names: PascalCase (e.g. `ContactPage`)
 - SCSS files: Must exactly match directory name (e.g. `ContactPage.scss`)
 - React components: PascalCase.
-- SCSS class: Must be lowercase version of directory name in snake case (if applicable) (e.g. `.contact-page`)
+
+## CSS classes naming convention
+ - All css classes for custom components like list-item, card, blog-item, etc must follow BEM (block, element, modifier) convention
+
+ ## Component content guideline
+  - All created components should be empty and only contain the skeleton for react markup

@@ -1,20 +1,19 @@
 import Layout from '../../components/Layout'
+import MainBanner from '../../components/MainBanner'
+import Services from '../../components/Services'
+import Selections from '../../components/Selections'
+import Testimonials from '../../components/Testimonials'
+import Contact from '../../components/Contact'
+import './Index.scss'
 
 function Index() {
   return (
     <Layout>
-      <div className="container">
-        <h1> Base website template </h1>
-
-        <div className="row"> 
-          <div className="col-6">
-            <h1> left content </h1>
-          </div>
-          <div className="col-6">
-            <h1> right content </h1>
-          </div>
-        </div>
-      </div>
+      <MainBanner />
+      <Services />
+      <Selections />
+      <Testimonials />
+      <Contact />
     </Layout>
   )
 }
