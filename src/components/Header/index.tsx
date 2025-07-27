@@ -44,11 +44,37 @@ const Header = () => {
   }, [])
 
   return (
-    <header id="header" className={(isScrolled) ? 'scrolled' : !isHomePage ? 'not-in-homepage' : '' }>
-      <div className="header-outer">
-        <div className="container-fluid">
-          <div className="header-inner">
-            {/* <Logo variant="invert" /> */}
+    <header id="header" className={(isScrolled) ? 'scrolled' : !isHomePage ? 'not-in-homepage' : '' } >
+      <div className="header-outer" data-aos="fade-in" data-aos-duration="500" data-aos-delay="300">
+        <div className="container-lg">
+          <div className="row">
+            <div className="col">
+              <a href="/" className="logo"> Isaac Ali </a>
+            </div>
+
+            <div className="col-6">
+              <ul className="main-menu d-none d-md-flex">
+                <li>
+                  <a href="#services"> Services </a>
+                </li>
+
+                <li>
+                  <a href="#"> My Work </a>
+                </li>
+
+                <li>
+                  <a href="#about"> About Me </a>
+                </li>
+
+                <li>
+                  <a href="#contact"> Contact Me </a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="col">
+            
+            </div>
 
             <NavButton isOpen={isMenuOpen} onClick={toggleMenu} />
           </div>

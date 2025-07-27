@@ -12,6 +12,19 @@
   align-items: center;
   background-color: transparent;
   transition: all .2s ease-in-out;
+  padding: 1rem 0;
+
+  * {
+    color: $color-primary;
+  }
+
+  .logo {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-primary;
+    font-size: 1.2rem;
+    transition: all .3s ease-in-out;
+  }
 
   .header-outer {
     z-index: 100;
@@ -24,6 +37,14 @@
     transition: all 0.2s ease-in-out;
   }
 
+  .header-inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   > .container {
     position: relative;
     z-index: 100;
@@ -31,18 +52,12 @@
   
   .nav-button {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 30px;
+    top: 20px;
     bottom: 0;
     margin: auto;
-  }
 
-  .header-inner {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    display: none;
   }
 
   @include mobile {
@@ -53,11 +68,6 @@
     .nav-button .menu-btn {
       width: 2.5rem;
     }
-
-    .menu-btw-wrapper {
-      right: .5rem;
-      top: 2rem;
-    }
   }
 }
 
@@ -65,7 +75,14 @@ body {
   #header {
     &.scrolled,
     &.not-in-homepage {
-      .header-inner {
+      padding: 0.5rem 0;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.06);
+      backdrop-filter: blur(5px);
+      font-size: 0.8rem;
+
+      .logo {
+        font-size: 1rem;
       }
     }
   }

@@ -10,7 +10,7 @@
   }
 
   * {
-    color: $color-light;
+    color: $color-primary;
   }
 
   nav {
@@ -19,7 +19,7 @@
     position: fixed;
     top: -100vh;
     z-index: 99;
-    background-color: rgba(228, 31, 40, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
@@ -58,6 +58,6 @@
   }
 
   .nav-link:hover, .nav-link:focus {
-    color: $color-light;
+    opacity: 0.8;
   }
 }
