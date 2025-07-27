@@ -1,0 +1,36 @@
+@use '../../variables' as *;
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 240px;
+  background-color: $color-primary;
+  color: $color-tertiary;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+
+  * {
+    color: $color-light;
+  }
+
+  .connect {
+    margin-top: 1.5rem;
+  }
+
+  .social-links {
+    margin-top: 1.5rem;
+  }
+  
+
+  .container {
+    text-align: center;
+  }
+
+  .copyright {
+    margin: 0;
+    font-size: .6rem;
+    opacity: 0.8;
+  }
+} 

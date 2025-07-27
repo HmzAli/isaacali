@@ -1,6 +1,76 @@
 @use '../../variables' as *;
 
 #header {
-    
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: all .2s ease-in-out;
+
+  .header-outer {
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+  }
+
+  > .container {
+    position: relative;
+    z-index: 100;
+  }
+  
+  .nav-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .header-inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  @include mobile {
+    .logo {
+      width: 8rem;
+    }
+
+    .nav-button .menu-btn {
+      width: 2.5rem;
+    }
+
+    .menu-btw-wrapper {
+      right: .5rem;
+      top: 2rem;
+    }
+  }
 }
 
+body {
+  #header {
+    &.scrolled,
+    &.not-in-homepage {
+      .header-inner {
+      }
+    }
+  }
+}
+
+.main-content.not-homepage {
+  padding-top: 80px;
+}

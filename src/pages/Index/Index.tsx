@@ -1,21 +1,18 @@
 import Layout from '../../components/Layout'
 import MainBanner from '../../components/MainBanner'
-import Services from '../../components/Services'
-import Selections from '../../components/Selections'
-import About from '../../components/About'
-import Testimonials from '../../components/Testimonials'
-import Contact from '../../components/Contact'
 import './Index.scss'
+import { PageMetadata } from '../../components/PageMetaData'
 
 function Index() {
   return (
     <Layout>
+      <PageMetadata
+        title="IsaacAli"
+        description="Bespoke websites & landing pages"
+        canonical="https://isaacali.com"
+      />
+
       <MainBanner />
-      <Services />
-      <Selections />
-      <About />
-      <Testimonials />
-      <Contact />
     </Layout>
   )
 }

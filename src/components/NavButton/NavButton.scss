@@ -1,0 +1,51 @@
+@use '../../variables' as *;
+
+.nav-button {
+  display: block;
+  position: relative;
+  width: 3.75rem;
+  height: 60px;
+  cursor: pointer;
+
+  .menu-btw-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    background-color: rgba(100, 100, 100, 0.35);
+    border-radius: .2rem;
+    right: 2rem;
+    top: 3.5rem;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      // background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  .menu-btn {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .menu-btn-open {
+    opacity: 1;
+  }
+
+  .menu-btn-close {
+    opacity: 0;
+  }
+
+  &.open {
+    .menu-btn-open {
+      opacity: 0;
+    }
+
+    .menu-btn-close {
+      opacity: 1;
+    }
+  }
+} 

@@ -1,0 +1,50 @@
+@use '../../variables' as *;
+
+.order {
+  background-color: $color-light;
+
+  .location-text {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+.delivery {
+  background-color: $color-tertiary;
+}
+
+.online-order-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .order-item {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 200px;
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  @include mobile {
+    flex-direction: column;
+    gap: 1.5rem;
+    .order-item {
+      img {
+        max-width: 180px;
+      }
+    }
+  }
+}

@@ -1,5 +1,11 @@
 @use '../../variables' as *;
 
 .selections {
-  // Styles will be added here when needed
-} 
+  background-color: $color-tertiary;
+
+  @include mobile {
+    .product-image {
+      height: 15rem;
+    }
+  }
+}

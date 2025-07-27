@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
   return (
     <Layout>
       <div className="container">
-        <h1>Privacy Policy</h1>
+        <h1>Lorem Ipsum Heading</h1>
         <div className="content">
           {/* Add your privacy policy content here */}
         </div>

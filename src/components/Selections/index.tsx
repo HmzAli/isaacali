@@ -1,76 +1,111 @@
-import "./Selections.scss"
+import './Selections.scss';
 
 const Selections = () => {
   return (
-    <div className="selections main-section">
-      <div className="container">
-        <h2 className="main-section__title">Selected work</h2>
+    <section className="selections" id="selections">
+      <div className="container-fluid container-xl">
+        <h2 className="main-section__title" data-aos="fade-in" data-aos-duration="500">Best Seller Items </h2>
 
         <div className="row">
-            <div className="col-md-6">
-                <div className="selection-item">
-                    <h3 className="selection-item__title">Jasper AI</h3>
-
-                    <div className="selection-item__content" data-content-id="selection-item-jasper">
-                        <p>
-                        Jasper.ai is an AI platform helping enterprise marketers create high-impact campaigns with 90+ purpose-built apps. For their website redesign, I focused on blending sleek aesthetics with engaging motion design. I implemented scroll-triggered animations and micro-interactions to showcase Jasper’s AI capabilities dynamically.
-                        </p>
-
-                        <p>
-                        The challenge was balancing visual flair with rock-solid performance. By optimizing assets and implementing lazy loading, we delivered a fast yet visually immersive experience that effortlessly guides users from discovery to conversion
-                        </p>
-                    </div>
+          <div className="col-lg-6">
+            <div className="product-inner item-card">
+              <div className="row gx-0">
+                <div className="col-md-4">
+                  <figure className="product-image" data-aos="fade-in" data-aos-duration="1000">
+                    <img src="./IsaacAli.jpeg" alt="original" />
+                  </figure>
                 </div>
-            </div>
 
-            <div className="col-md-6">
-                <div className="selection-item">
-                    <h3 className="selection-item__title">allO</h3>
+                <div className="col-md-7">
+                  <div className="content-wrapper" data-content-id="product-desc" data-aos="fade-in" data-aos-duration="800">
+                    <h4> IsaacAli </h4>
 
-                    <div className="selection-item__content" data-content-id="selection-item-allO">
-                        <p>
-                        AllO streamlines operations of restaurants with their suite of solutions for serving guests more efficiently. In collaboration with a team talented designer, I’ve help build outstanding web experience that translates gracefully into smaller screens.
-
-                        </p>
-                        <p>
-                        Working with AllO showed how constraints like dark mode's limited color options can push creativity further. The project proved beautiful design 
-                        </p>
+                    <div className="product-desc">
+                      <div className="product-caption">
+                      A warm sandwich in soft bread, available in beef, chicken, or vegetarian, with fresh toppings, fries, and a mix of sauces.
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
 
-            <div className="col-md-6">
-                <div className="selection-item">
-                    <h3 className="selection-item__title">Muayfit</h3>
+          <div className="col-lg-6">
+            <div className="product-inner item-card">
+              <div className="row gx-0">
+                <div className="col-md-4">
+                  <figure className="product-image" data-aos="fade-in" data-aos-duration="1000">
+                    <img src="./shawarious.webp" alt="original" />
+                  </figure>
+                </div>
 
-                    <div className="selection-item__content" data-content-id="selection-item-muayfit">
-                        <p>
-                        As a long-time member of Muayfit gym, I had the pleasure of becoming acquainted with most of the staff at the PJ branch. My coach quickly learned about my profession and suggested I rebuild the gym's outdated official website.</p>
+                <div className="col-md-7">
+                  <div className="content-wrapper" data-content-id="product-desc" data-aos="fade-in" data-aos-duration="800">
+                    <h4> Shawarious </h4>
 
-                        <p>This project was one of the fastest from design to delivery that I've undertaken due to the tight deadline imposed by the gym's planned major event, which required the site's immediate launch. The simple design, aesthetics, and user experience of the resulting site were highly praised by both gym members and staff.
-                        </p>
+                    <div className="product-desc">
+                      <div className="product-caption">
+                        Double-wrapped Shawarious in beef or chicken, with lettuce, onion, pickles, and tahini sauce. Available in small or large size.
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
 
-            <div className="col-md-6">
-                <div className="selection-item">
-                    <h3 className="selection-item__title">Edvance Digital</h3>
+          <div className="col-lg-6">
+            <div className="product-inner item-card">
+              <div className="row gx-0">
+                <div className="col-md-4">
+                  <figure className="product-image" data-aos="fade-in" data-aos-duration="1000">
+                    <img src="./falafel.jpeg" alt="original" />
+                  </figure>
+                </div>
 
-                    <div className="selection-item__content" data-content-id="selection-item-edvance">
-                        <p>
-                        Edvance is a fintech startup that automates school fee collection and provides smart fee disbursement solutions. I’ve worked closely with Edward who gave me full ownership of development and delivery of both website and admin panel.</p>
+                <div className="col-md-7">
+                  <div className="content-wrapper" data-content-id="product-desc" data-aos="fade-in" data-aos-duration="800">
+                    <h4> Falafel </h4>
 
-                        <p>
-                        In contrast to my later projects, Edvance Digital presented a unique challenge with its scarce design assets. This required me to step into a significant design role alongside development, allowing me to make key aesthetic and UX decisions that defined the final product.
-                        </p>
+                    <div className="product-desc">
+                      <div className="product-caption">
+                      A vegetarian wrap with spiced chickpeas, lettuce, tomato, and a mix of homemade sauces—garlic, tomato, green chilli, and red chilli.
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+
+          <div className="col-lg-6">
+            <div className="product-inner item-card">
+              <div className="row gx-0">
+                <div className="col-md-4">
+                  <figure className="product-image" data-aos="fade-in" data-aos-duration="1000">
+                    <img src="./fajita.jpeg" alt="original" />
+                  </figure>
+                </div>
+
+                <div className="col-md-7">
+                  <div className="content-wrapper" data-content-id="product-desc" data-aos="fade-in" data-aos-duration="800">
+                    <h4> Fajita </h4>
+
+                    <div className="product-desc">
+                      <div className="product-caption">
+                        Fajita-style sandwich or wrap with your choice of chicken or beef, filled with capsicum, onion, mushroom, and sweet corn.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  )
-}
+    </section>
+  );
+};
 
-export default Selections 
+export default Selections;

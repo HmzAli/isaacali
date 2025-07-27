@@ -1,0 +1,63 @@
+@use '../../variables' as *;
+
+.navbar {
+  width: 100%;
+  height: 0vh;
+  padding: 0;
+
+  &.open {
+    height: 100vh;
+  }
+
+  * {
+    color: $color-light;
+  }
+
+  nav {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    z-index: 99;
+    background-color: rgba(228, 31, 40, 0.5);
+    backdrop-filter: blur(10px);
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    transition: all 400ms cubic-bezier(1,0,0,1);
+  }
+
+  nav.open {
+    top: 0;
+    border-radius: initial;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  li {
+    margin: 0 2rem;
+  }
+
+  .nav-link {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1.2rem;
+    transition: opacity .2s ease-in-out;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  .nav-link:hover, .nav-link:focus {
+    color: $color-light;
+  }
+}

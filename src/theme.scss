@@ -1,23 +1,410 @@
 @use './variables' as *;
+@use './custom.scss';
 
 @import 'bootstrap/dist/css/bootstrap.min.css';
 @import './fonts.css';
 
 /* Global Styles */
-body {
-  font-family: 'Open Sans', sans-serif;
+html {
+  position: relative;
+  font-family: 'Quicksand';
   font-weight: 400;
   line-height: 1.5;
-  color: $color-quaternary;
-  font-size: 16px;
+  font-size: 18px;
+  height: 100%;
+
+  @include mobile {
+    font-size: 16px;
+  }
 }
 
-.main-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+body {
+  position: relative;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 1rem;
+  min-height: 100vh;
+  padding-bottom: 230px;
+}
 
-    .main-section__title {
-        margin-bottom: 2rem;
-        text-align: center;
+section {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+// Typeography
+h1, h2, h3, H4 {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: $color-primary;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+// Buttons
+.btn {
+  min-width: 150px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 0;
+  background-color: $color-secondary;
+  color: $color-primary;
+  box-shadow: -0.11rem 0.11rem 0.1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease-in-out;
+  padding: 0.56rem 1.11rem;
+  border: 0.04em solid transparent;
+
+  &:hover,
+  &:active {
+    background-color: $color-primary !important;
+    color: $color-secondary !important;
+  }
+
+  &:active {
+    box-shadow: -0.07rem 0.06rem 0.06rem rgba(0, 0, 0, 0.2) !important;
+    transform: translate(-0.06rem, 0.06rem);
+  }
+
+  &.btn-secondary {
+    background-color: $color-primary;
+    color: $color-secondary;
+
+    &:hover,
+    &:active {
+      border: .04em solid rgba(0, 0, 0, 0.2);
+      background-color: $color-tertiary !important;
+      color: $color-secondary !important;
     }
+  }
+
+  &.btn-outline {
+    background-color: transparent;
+    color: $color-light;
+    border: 1px solid $color-light;
+    border: 1px solid $color-border;
+
+    &:hover {
+      border: 1px solid $color-primary;
+    }
+
+    &:active {
+      border: 1px solid $color-primary;
+    }
+  }
+
+  &.btn-dark {
+    background-color: $color-secondary;
+    color: $color-light;
+
+    &.icon svg path {
+      fill: $color-light;
+    }
+
+    &:hover {
+      background-color: $color-light !important;
+      border-color: transparent;
+
+      &.icon svg path {
+        fill: $color-secondary !important;
+      }
+    }
+  }
+
+  &.has-icon {
+    display: inline-block;
+    position: relative;
+    padding-left: 2.2em;
+
+    .icon-whatsapp {
+      position: absolute;
+      left: 0.5em;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 1.4em;
+      height: 1.4em;
+    }
+  }
+}
+
+// Containers
+.main-section {
+  position: relative;
+  
+  &__title {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+}
+
+.content-wrapper {
+  position: relative;
+  max-width: 23.889rem;
+
+  @include mobile {
+    margin: auto;
+  }
+}
+
+// Image
+figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.image-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+// Slick
+.slick-slider {
+  .slick-arrow {
+    z-index: 100;
+    top: 50%;
+    bottom: 50%;
+    margin: auto;
+    width: 3.5rem;
+    height: 3.5rem;
+    transition: all .2s ease-in-out;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &.slick-next {
+      right: 10rem;
+
+      &:before {
+        background-image: url(/arrow-right.png);
+      }
+    }
+
+    &.slick-prev {
+      &:before {
+        background-image: url(/arrow-left.png);
+      }
+    }
+
+    &.slick-prev {
+      left: 10rem;
+    }
+
+    &:before,
+    &:after {
+      @include has-bg;
+      display: block;
+      color: transparent;
+      width: 3.5rem;
+      height: 3.5rem;
+      background-position: center center;
+    }
+  }
+
+  .slick-dots {
+    position: inherit;
+    bottom: 0;
+
+    li.slick-active button:before {
+      color: $color-primary;
+    }
+
+    button {  
+      &:before {
+        font-size: 0.6rem;
+        transition: all .3s ease-in-out;
+      }
+    }
+  }
+
+  @include mobile {
+    .item-card {
+      min-height: 505px;
+    }
+
+    .slick-arrow {
+      width: 2.5rem;
+      height: 3rem;
+    }
+
+    .slick-arrow.slick-next {
+      &:before {
+        width: 2.5rem;
+        height: 3rem;
+      }
+
+      right: 1rem;
+    }
+
+    .slick-arrow.slick-prev {
+      &:before {
+        width: 2.5rem;
+        height: 3rem;
+      }
+
+      left: 1rem;
+    }
+  }
+}
+
+// Social
+.social-links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+
+  li {
+    display: flex;
+
+    img {
+      width: 30px;
+      margin: 0 1rem;
+    }
+  }
+}
+
+// Others
+.section-sep {
+  width: 33.333rem;
+}
+
+.link-item {
+  display: block;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    scale: 1.01;
+  }
+}
+
+p {
+  a {
+    text-decoration: none;
+    color: #007bff !important;
+    border-bottom: 1px dotted #007bff;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color: #0056b3 !important;
+      border-color: #0056b3;
+    }
+  }
+}
+
+small {
+  font-size: .8rem;
+  color: #999;
+}
+
+// Cards
+.item-card {
+  @include box-shadow-card;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 1rem auto;
+  background-color: $color-bg-light;
+  border-radius: 1em;
+  overflow: hidden;
+
+  .content-wrapper {
+    padding: 1.2em;
+  }
+}
+
+.product-body {
+  margin-bottom: 1rem;
+
+  .price {
+    font-weight: 600;
+  }
+}
+
+.product-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12rem;
+
+  .product-caption {
+    text-align: center;
+  }
+
+  .product-variation {
+    max-height: 21.5rem;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@include mobile {
+  .cta-wrapper {
+    margin-bottom: 5rem;
+  }
+
+  .product-wrapper {
+    padding: 1.125rem;
+    margin-bottom: 0;
+  }
+
+  .product-image {
+    margin-bottom: 2rem;
+    margin-left: initial;
+    margin: auto;
+  }
+
+  .content-wrapper {
+    text-align: left;
+  }
+
+  .product-caption {
+    text-align: left;
+  }
+
+  .product-variation {
+    ul {
+      text-align: left;
+      width: 100px;
+      margin: auto;
+    }
+  }
+}
+
+.mebed-map {
+  width: 100%;
+  height: 400px;
+
+  iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// iframe
+iframe {
+  border-radius: 1rem;
 }
