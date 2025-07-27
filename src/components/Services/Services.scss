@@ -3,7 +3,15 @@
 .services {
   position: relative;
   overflow: hidden;
-  box-shadow: -1px -1px 40px rgba(0,0,0,0.05);
+  box-shadow: inset 1px 1px 40px rgba(0,0,0,0.05);
+  background-color: $color-tertiary;
+  // clip-path: polygon(50% 0%, 100% 3%, 100% 100%, 0 100%, 0 4%);
+  // clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%);
+  clip-path: polygon(61% 0, 100% 5%, 100% 60%, 100% 99%, 0 100%, 0 0, 29% 4%);
+  transform: translateY(-60px);
+  
+
+
 
   .service-wrapper {
     display: flex;
@@ -25,7 +33,7 @@
   .phone-mock {
     position: absolute;
     bottom: 155px;
-    right: 80px;
+    right: 95px;
     width: 250px;
   }
 
