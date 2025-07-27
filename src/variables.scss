@@ -1,5 +1,5 @@
-$color-primary: #b5383e;
-$color-secondary: #000000;
+$color-primary: #083c5d;
+$color-secondary: #ffefe6;
 $color-tertiary: #ffffff;
 $color-quaternary: #333;
 $color-quinary: #666;
@@ -9,7 +9,7 @@ $color-light: #ebe7e1;
 $color-bg-light: #f7f7f7;
 
 // Element colors
-$color-font: #333333;
+$color-font: #4b5155;
 $color-border: #e3e3e3;
 
 // shadows
@@ -17,6 +17,9 @@ $text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 
 // Decoration
 $border-radius: 1rem;
+
+// Buttons
+$color-primary-hover: #1f6089;
 
 // Responsive
 @mixin larger-screen {
