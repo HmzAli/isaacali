@@ -5,7 +5,8 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: $color-secondary;
+    background: radial-gradient(transparent, $color-secondary);
+    background: $color-secondary;
     overflow: hidden;
 
     .cta-wrapper {

@@ -150,8 +150,8 @@ ul {
 
 // Containers
 .main-section {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   position: relative;
   
   &__title {
@@ -439,8 +439,8 @@ iframe {
 
     
     &:hover {
-      background-color: $color-primary;
-      color: $color-tertiary !important;
+      color:  $color-primary-hover !important;
+      text-decoration: dotted;
     }
   }
 }

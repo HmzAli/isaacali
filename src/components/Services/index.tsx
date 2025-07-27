@@ -8,13 +8,18 @@ const Services = () => {
 
         <div className="service-wrapper"  data-aos="fade-in" data-aos-duration="800" data-aos-delay="300">
           <div className="service-item" data-content-id="service-item-1">
-              <div className="service-item__content">
-                 <p>
-                    Beautifully crafted websites tailored to your brand and vision. Designed with a strong focus on delivering an exceptional user experience across all screens.
-                 </p>
-              </div>
+            <div className="service-item__content">
+                <p>
+                  Beautifully crafted websites tailored to your brand and vision. Designed with a strong focus on delivering an exceptional user experience across all screens.
+                </p>
             </div>
+          </div>
         </div>
+      </div>
+
+      <div className="mock-wrapper">
+        <img className="phone-mock" src="/phone-mock.webp" alt="Phone" />
+        <img className="laptop-mock" src="/laptop-mock.webp" alt="Phone" />
       </div>
     </div>
   )
