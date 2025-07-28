@@ -27,11 +27,6 @@ body {
   padding-bottom: 230px;
 }
 
-section {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 // Typeography
 h1, h2, h3, H4 {
   font-weight: 700;
@@ -299,6 +294,7 @@ figure {
   display: block;
   cursor: pointer;
   transition: all .3s ease-in-out;
+  text-decoration: none;
 
   &:hover {
     scale: 1.01;
@@ -336,6 +332,41 @@ small {
 
   .content-wrapper {
     padding: 1.2em;
+  }
+}
+
+.image-item-card {
+  overflow: hidden;
+  background-color: $color-tertiary;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+
+  &:hover {
+    border-color: $color-secondary;
+  }
+
+  * {
+    color: $color-font;
+  }
+
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 52%;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      image-rendering: crisp-edges;
+    }
+  }
+
+  &__content {
+    padding: 1rem;
   }
 }
 
@@ -441,5 +472,51 @@ iframe {
       color:  $color-primary-hover !important;
       text-decoration: dotted;
     }
+  }
+}
+
+// Borders
+.b-bottom-right {
+  border-bottom-right-radius: $card-border-radius !important;
+}
+.b-bottom-left {
+  border-bottom-left-radius: $card-border-radius !important;
+}
+.b-top-right {
+  border-top-right-radius: $card-border-radius !important;
+}
+.b-top-left {
+  border-top-left-radius: $card-border-radius !important;
+}
+
+// backdrop
+.item-backdrop {
+  position: relative;
+  transition: opacity .4s ease-in-out;
+  z-index: 0;
+
+  &:hover {
+    z-index: 2;
+
+    &::before {
+      z-index: -1;
+      opacity: 1;
+    }
+  }
+
+  &:before {
+    pointer-events: none;
+    display: block;
+    content: " ";
+    position: absolute;
+    left: -200%;
+    top: -200%;
+    bottom: -100%;
+    width: 3000px;
+    height: 2000px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    backdrop-filter: blur(10px);
+    transition: all .3s ease-in-out;
   }
 }

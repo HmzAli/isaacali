@@ -59,7 +59,7 @@ const Header = () => {
                 </li>
 
                 <li>
-                  <a href="#"> My Work </a>
+                  <a href="#projects"> Project Showcase </a>
                 </li>
 
                 <li>

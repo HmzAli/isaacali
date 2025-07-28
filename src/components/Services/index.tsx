@@ -10,17 +10,17 @@ interface SceneConfig {
 
 const scenes: SceneConfig[] = [
   {
-    duration: 1000,
+    duration: 1300,
     tweenTarget: '#phone',
     tweenVars: {
       translateY: -380
     }
   },
   {
-    duration: 1500,
+    duration: 1800,
     tweenTarget: '#laptop',
     tweenVars: {
-      translateY: -150
+      translateY: -180
     }
   }
 ];

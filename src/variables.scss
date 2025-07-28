@@ -17,6 +17,7 @@ $text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 
 // Decoration
 $border-radius: 1rem;
+$card-border-radius: 2rem;
 
 // Buttons
 $color-primary-hover: #1f6089;
@@ -103,6 +104,11 @@ $color-primary-hover: #1f6089;
 }
 
 // Decorations
+.section-separator {
+  transform: translateY(-60px); // So curent section partially overlap the one before it
+  clip-path: polygon(61% 0, 100% 5%, 100% 60%, 100% 99%, 0 100%, 0 0, 29% 4%);
+}
+
 @mixin box-shadow {
   box-shadow: -0.11rem 0.11rem 0.1rem rgba(0, 0, 0, 0.2);
 }

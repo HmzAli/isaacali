@@ -14,7 +14,7 @@ const Navbar = ({ isMenuOpen, closeMenu }: NavbarProps) => {
             <a href="#menu" className="nav-link" onClick={closeMenu}>Services</a>
           </li>
           <li>
-            <a href="#find-us" className="nav-link" onClick={closeMenu}>My work</a>
+            <a href="#find-us" className="nav-link" onClick={closeMenu}>Project Showcase</a>
           </li>
           <li>
             <a href="#about" className="nav-link" onClick={closeMenu}>About Me</a>

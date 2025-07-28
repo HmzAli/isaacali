@@ -2,105 +2,53 @@ import './Selections.scss';
 
 const Selections = () => {
   return (
-    <section className="selections" id="selections">
+    <section className="selections main-section" id="projects">
       <div className="container-fluid container-xl">
-        <h2 className="main-section__title" data-aos="fade-in" data-aos-duration="500">Best Seller Items </h2>
+        <h2 className="main-section__title" data-aos="fade-in" data-aos-duration="500">Project Showcase </h2>
 
-        <div className="row">
-          <div className="col-lg-6">
-            <div className="product-inner item-card">
-              <div className="row gx-0">
-                <div className="col-md-4">
-                  <figure className="product-image" data-aos="fade-in" data-aos-duration="1000">
-                    <img src="./IsaacAli.jpeg" alt="original" />
+        <div className="projects-wrapper" data-aos="fade-in" data-aos-duration="800" data-aos-delay="300">
+          <div className="row g-0">
+            <div className="col-md-6 item-backdrop">
+              <a className="link-item">
+                <div className="image-item-card b-top-left">
+                  <figure className="image-wrapper">
+                    <img src="/muayfit.webp" alt="Muay Fit" />
                   </figure>
                 </div>
-
-                <div className="col-md-7">
-                  <div className="content-wrapper" data-content-id="product-desc" data-aos="fade-in" data-aos-duration="800">
-                    <h4> IsaacAli </h4>
-
-                    <div className="product-desc">
-                      <div className="product-caption">
-                      A warm sandwich in soft bread, available in beef, chicken, or vegetarian, with fresh toppings, fries, and a mix of sauces.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
-          </div>
 
-          <div className="col-lg-6">
-            <div className="product-inner item-card">
-              <div className="row gx-0">
-                <div className="col-md-4">
-                  <figure className="product-image" data-aos="fade-in" data-aos-duration="1000">
-                    <img src="./shawarious.webp" alt="original" />
+            <div className="col-md-6 item-backdrop">
+              <a className="link-item">
+                <div className="image-item-card b-top-right">
+                  <figure className="image-wrapper">
+                    <img src="/bokadios.webp" alt="Bokadios" />
                   </figure>
                 </div>
-
-                <div className="col-md-7">
-                  <div className="content-wrapper" data-content-id="product-desc" data-aos="fade-in" data-aos-duration="800">
-                    <h4> Shawarious </h4>
-
-                    <div className="product-desc">
-                      <div className="product-caption">
-                        Double-wrapped Shawarious in beef or chicken, with lettuce, onion, pickles, and tahini sauce. Available in small or large size.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
-          </div>
 
-          <div className="col-lg-6">
-            <div className="product-inner item-card">
-              <div className="row gx-0">
-                <div className="col-md-4">
-                  <figure className="product-image" data-aos="fade-in" data-aos-duration="1000">
-                    <img src="./falafel.jpeg" alt="original" />
+            <div className="col-md-6 item-backdrop">
+              <a className="link-item">
+                <div className="image-item-card b-bottom-left">
+                  <figure className="image-wrapper">
+                    <img src="/flemonade.webp" alt="Flemonade" />
                   </figure>
                 </div>
-
-                <div className="col-md-7">
-                  <div className="content-wrapper" data-content-id="product-desc" data-aos="fade-in" data-aos-duration="800">
-                    <h4> Falafel </h4>
-
-                    <div className="product-desc">
-                      <div className="product-caption">
-                      A vegetarian wrap with spiced chickpeas, lettuce, tomato, and a mix of homemade sauces—garlic, tomato, green chilli, and red chilli.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
-          </div>
 
-          <div className="col-lg-6">
-            <div className="product-inner item-card">
-              <div className="row gx-0">
-                <div className="col-md-4">
-                  <figure className="product-image" data-aos="fade-in" data-aos-duration="1000">
-                    <img src="./fajita.jpeg" alt="original" />
+            <div className="col-md-6 item-backdrop">
+              <a className="link-item">
+                <div className="image-item-card b-bottom-right">
+                  <figure className="image-wrapper">
+                    <img src="/edvance.webp" alt="Edvance" />
                   </figure>
                 </div>
-
-                <div className="col-md-7">
-                  <div className="content-wrapper" data-content-id="product-desc" data-aos="fade-in" data-aos-duration="800">
-                    <h4> Fajita </h4>
-
-                    <div className="product-desc">
-                      <div className="product-caption">
-                        Fajita-style sandwich or wrap with your choice of chicken or beef, filled with capsicum, onion, mushroom, and sweet corn.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
+
+            <div className="item-backdrop"></div>
           </div>
         </div>
       </div>

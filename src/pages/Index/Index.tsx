@@ -3,6 +3,7 @@ import MainBanner from '../../components/MainBanner'
 import './Index.scss'
 import { PageMetadata } from '../../components/PageMetaData'
 import Services from '../../components/Services'
+import Selections from '../../components/Selections'
 
 function Index() {
   return (
@@ -15,6 +16,7 @@ function Index() {
 
       <MainBanner />
       <Services />
+      <Selections />
     </Layout>
   )
 }

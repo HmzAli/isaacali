@@ -1,7 +1,33 @@
 @use '../../variables' as *;
 
 .selections {
-  background-color: $color-tertiary;
+  @extend .section-separator;
+  position: relative;
+  z-index: 2;
+  background-color: $color-primary;
+  color: $color-tertiary;
+  transform: translateY(-70px);
+  overflow: hidden;
+
+  .main-section__title {
+    position: absolute;
+    z-index: 100;
+    top: 4rem;
+    left: 0;
+    right: 0;
+  }
+
+  .projects-wrapper {
+    margin-top: 7rem;
+  }
+
+  .image-item-card {
+    margin: .5rem;
+  }
+
+  h2, h3, h4, p {
+    color: inherit;
+  }
 
   @include mobile {
     .product-image {
