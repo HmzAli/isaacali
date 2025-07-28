@@ -4,10 +4,9 @@
   @extend .section-separator;
   position: relative;
   z-index: 1;
-  overflow: hidden;
   padding-bottom: 0;
   background-color: $color-tertiary;
-  transform: translateY(-60px);
+  transform: translateY(-80px);
   
   .section-intro {
     max-width: 38.889rem;
