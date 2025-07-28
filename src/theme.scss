@@ -423,11 +423,11 @@ iframe {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   white-space: nowrap;
 
   li {
-    margin: 0 1rem;
+    margin: 0 .5rem;
     padding: 0;
   }
   
@@ -436,7 +436,6 @@ iframe {
     border-radius: .3em;
     text-decoration: none;
     transition: all .2s ease-in-out;
-
     
     &:hover {
       color:  $color-primary-hover !important;

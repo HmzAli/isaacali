@@ -52,7 +52,7 @@ const Header = () => {
               <a href="/" className="logo"> Isaac Ali </a>
             </div>
 
-            <div className="col-6">
+            <div className="col-7">
               <ul className="main-menu d-none d-md-flex">
                 <li>
                   <a href="#services"> Services </a>
@@ -70,10 +70,6 @@ const Header = () => {
                   <a href="#contact"> Contact Me </a>
                 </li>
               </ul>
-            </div>
-
-            <div className="col">
-            
             </div>
 
             <NavButton isOpen={isMenuOpen} onClick={toggleMenu} />

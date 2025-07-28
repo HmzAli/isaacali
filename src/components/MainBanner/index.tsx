@@ -18,6 +18,8 @@ const MainBanner = () => {
            </div>
         </div>
       </div>
+
+      <img src="/grid.webp" alt="bg" className="grid"/>
     </section>
   )
 }

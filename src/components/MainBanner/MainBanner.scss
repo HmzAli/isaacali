@@ -8,6 +8,18 @@
     background: radial-gradient(transparent, $color-secondary);
     background: $color-secondary;
     overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    .grid {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        margin: auto;
+        z-index: -1;
+        opacity: 0.2;
+    }
 
     .cta-wrapper {
         margin-top: 2rem;

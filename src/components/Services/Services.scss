@@ -2,16 +2,19 @@
 
 .services {
   position: relative;
+  z-index: 1;
   overflow: hidden;
+  padding-bottom: 0;
   box-shadow: inset 1px 1px 40px rgba(0,0,0,0.05);
   background-color: $color-tertiary;
-  // clip-path: polygon(50% 0%, 100% 3%, 100% 100%, 0 100%, 0 4%);
-  // clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%);
   clip-path: polygon(61% 0, 100% 5%, 100% 60%, 100% 99%, 0 100%, 0 0, 29% 4%);
   transform: translateY(-60px);
   
-
-
+  .section-intro {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+  }
 
   .service-wrapper {
     display: flex;
@@ -25,22 +28,22 @@
 
   .mock-wrapper {
     position: relative;
-    max-width: 1000px;
-    min-height: 650px;
+    max-width: 800px;
+    min-height: 530px;
     margin: auto;
   }
 
   .phone-mock {
     position: absolute;
-    bottom: 155px;
+    bottom: -180px;
     right: 95px;
-    width: 250px;
+    width: 200px;
   }
 
   .laptop-mock {
     position: absolute;
-    bottom: 6px;
+    bottom: -150px;
     left: 0;
-    width: 600px;
+    width: 500px;
   }
 } 
