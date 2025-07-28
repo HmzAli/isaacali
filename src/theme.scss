@@ -520,3 +520,34 @@ iframe {
     transition: all .3s ease-in-out;
   }
 }
+
+// modal
+/* App.css */
+.modal {
+  display: none;
+}
+.modal.is-open {
+  display: block;
+}
+.modal__overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+}
+.modal__container {
+  background: white;
+  margin: 10% auto;
+  padding: 1rem;
+  max-width: 500px;
+  border-radius: 8px;
+  position: relative;
+}
+.modal__close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+}
