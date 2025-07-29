@@ -1,8 +1,8 @@
 {
-  "name": "bokadios",
+  "name": "isaacali",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://hmzali.github.io/bokadios",
+  "homepage": "https://hmzali.github.io/isaacali",
   "type": "module",
   "scripts": {
     "dev": "BASE_URL=/ vite",
