@@ -26,12 +26,13 @@
 
   .mock-wrapper {
     position: relative;
-    max-width: 44.444rem;
+    max-width: 36rem;
     min-height: 29.444rem;
     margin: auto;
   }
 
   .phone-mock {
+    z-index: 2;
     position: absolute;
     bottom: -180px;
     right: 12px;

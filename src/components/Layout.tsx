@@ -17,6 +17,8 @@ function Layout({ children }: LayoutProps) {
   useEffect(() => {
     AOS.init({
       once: true,
+      delay: 0,
+      offset: 0,
     });
   }, []);
 

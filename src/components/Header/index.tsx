@@ -48,7 +48,7 @@ const Header = () => {
   return (
     <header id="header" className={(isScrolled) ? 'scrolled' : !isHomePage ? 'not-in-homepage' : '' } >
       <div className="header-outer">
-        <div className="container-lg" data-aos="fade-in" data-aos-duration="500" data-aos-delay="500">
+        <div className="container-lg" data-aos="fade-in" data-aos-duration="500">
           <div className="row">
             <div className="col">
               <a href="/" className="logo"> Isaac Ali </a>
