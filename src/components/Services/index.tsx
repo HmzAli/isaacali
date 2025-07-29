@@ -51,14 +51,14 @@ const Services = () => {
   return (
     <div className="services main-section" id="services">
       <div className="container">
-        <h2 className="main-section__title" data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">What I offer</h2>
+        <h2 className="main-section__title" data-aos="fade-in" data-aos-duration="500">What I offer</h2>
 
         <p className="section-intro">
           Beautifully crafted websites tailored to your brand and vision. Designed with a strong focus on delivering an exceptional user experience across all screens.
         </p>
       </div>
 
-      <div className="mock-wrapper" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
+      <div className="mock-wrapper">
         <img className="phone-mock" src="/phone-mock.webp" alt="Phone" id="phone" />
         <img className="laptop-mock" src="/laptop-mock.webp" alt="Laptop" id="laptop"/>
       </div>

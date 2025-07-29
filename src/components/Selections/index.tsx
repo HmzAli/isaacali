@@ -137,7 +137,7 @@ const Selections = () => {
       </Modal>
 
       <div className="container-fluid container-xl">
-        <h2 className="main-section__title" data-aos="fade-in" data-aos-duration="500">Project Showcase </h2>
+        <h2 className="main-section__title" data-aos="fade-in" data-aos-duration="300">Project Showcase </h2>
 
         <div className="projects-wrapper">
           <div className="row g-0">

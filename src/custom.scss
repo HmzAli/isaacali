@@ -14,7 +14,8 @@ body {
     .main-section {
         @include mobile {
             .main-section__title {
-                
+                margin-left: 1rem;
+                margin-right: 1rem;
             }
         }
     }
