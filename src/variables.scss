@@ -108,6 +108,10 @@ $color-primary-hover: #1f6089;
 .section-separator {
   transform: translateY(-60px); // So curent section partially overlap the one before it
   clip-path: polygon(61% 0, 100% 5%, 100% 60%, 100% 99%, 0 100%, 0 0, 29% 4%);
+
+  @include mobile {
+    clip-path: polygon(61% 0, 100% 2%, 100% 60%, 100% 99%, 0 100%, 0 0, 29% 2%);
+  }
 }
 
 @mixin box-shadow {

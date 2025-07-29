@@ -34,8 +34,8 @@
   .phone-mock {
     position: absolute;
     bottom: -180px;
-    right: 95px;
-    width: 200px;
+    right: 12px;
+    width: 150px;
   }
 
   .laptop-mock {
@@ -43,5 +43,20 @@
     bottom: -150px;
     left: 0;
     width: 500px;
+  }
+
+  @include mobile {
+    .mock-wrapper {
+      min-height: 22.444rem;
+    }
+
+    .phone-mock {
+      right: 12px;
+      width: 150px;
+    }
+
+    .laptop-mock {
+      width: 300px;
+    }
   }
 } 
