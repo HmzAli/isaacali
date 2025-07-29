@@ -1,0 +1,9 @@
+@use '../../variables' as *;
+
+.contact {
+  @extend .section-separator;
+  position: relative;
+  z-index: 4;
+  background-color: $color-tertiary;
+  transform: translateY(-180px);
+}

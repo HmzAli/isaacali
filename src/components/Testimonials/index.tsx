@@ -38,7 +38,7 @@ const Testimonials = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false, // true
+    autoplay: true,
     autoplaySpeed: 5000,
     arrows: false,
     fade: true,
@@ -47,17 +47,15 @@ const Testimonials = () => {
 
   return (
     <div className="testimonials main-section">
-      <img src="./bottle-silhouette-white.png" className="section-sep" />
+      <h2 className="main-section__title" data-content-id="testimonials-section-title" data-aos="fade-in" data-aos-duration="500">Kind Words, Happy Clients</h2>
 
-      <h2 className="main-section__title" data-content-id="testimonials-section-title">Kind Words, Happy Clients</h2>
-
-      <div className="testimonial-wrapper" data-aos="fade-in" data-aos-duration="500" >
+      <div className="testimonial-wrapper" data-aos="fade-in" data-aos-duration="500">
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
             <div className="item-wrapper">
               <div key={index} className="testimonials__item">
                 <img className="testimonials__image" src={testimonial.image} alt={testimonial.name} />
-                <p className="testimonials__content">"{testimonial.content}"</p>
+                <p className="testimonials__content">{testimonial.content}</p>
                 <h5 className="testimonials__name">{testimonial.name}</h5>
                 <h5 className="testimonials__position">{testimonial.position}</h5>
               </div>

@@ -11,20 +11,10 @@
 }
 
 body {
-    .section-sep {
-        @include mobile {
-            width: 20.333rem;
-            top: -3.5rem;
-            left: 25px;
-        }
-    }
-
     .main-section {
         @include mobile {
             .main-section__title {
-                transform: translateY(-4rem);
-                font-size: 1.2rem;
-                margin-bottom: -0.4rem;
+                
             }
         }
     }

@@ -1,13 +1,12 @@
 @use '../../variables' as *;
 
 .testimonials {
-  z-index: 1;
+  @extend .section-separator;
+  z-index: 3;
   position: relative;
   background-color: $color-light;
-
-  .testimonial-wrapper {
-    margin-bottom: 9rem;
-  }
+  transform: translateY(-130px);
+  padding-bottom: 8rem;
 
   .testimonials__item {
     max-width: 400px;
@@ -21,6 +20,7 @@
     background-color: $color-tertiary;
     box-shadow: -.112rem .112rem .5rem #0000001a;
     border: .5px solid rgba(0, 0, 0, .15);
+    border-radius: $card-border-radius;
   }
 
   .testimonials__name {
