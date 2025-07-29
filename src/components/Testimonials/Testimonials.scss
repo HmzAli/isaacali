@@ -1,39 +1,64 @@
 @use '../../variables' as *;
 
 .testimonials {
-  &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  z-index: 1;
+  position: relative;
+  background-color: $color-light;
+
+  .testimonial-wrapper {
+    margin-bottom: 9rem;
   }
 
-  &__item {
-    margin-bottom: 3rem;
+  .testimonials__item {
+    max-width: 400px;
+    min-height: 500px;
+    padding: 2rem;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    background-color: $color-tertiary;
+    box-shadow: -.112rem .112rem .5rem #0000001a;
+    border: .5px solid rgba(0, 0, 0, .15);
   }
 
-  &__quote {
-    font-size: 1.25rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-    color: $color-quaternary;
+  .testimonials__name {
+    text-align: center;
   }
 
-  &__author {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+  .testimonials__content {
+    font-size: 1rem;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.8;
   }
 
-  &__name {
-    font-weight: 600;
-    color: $color-primary;
+  .testimonials__image {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 1.5rem;
   }
 
-  &__role {
-    color: $color-quinary;
+  .testimonials__position {
+    font-size: .8rem;
+    opacity: 0.8;
   }
 
-  &__company {
-    color: $color-quinary;
+  @include mobile {
+    .testimonials__item { 
+      padding: 1rem;
+      width: initial;
+    }
+
+    .testimonial-wrapper {
+      margin-bottom: 1rem;
+    }
   }
-} 
+}
