@@ -7,7 +7,7 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,23 +18,32 @@
 
 .modal-content {
   background: white;
-  padding: 20px;
   border-radius: $card-border-radius;
-  max-width: 500px;
+  max-width: 800px;
   width: 90%;
   max-height: 90vh;
   overflow-y: auto;
   position: relative;
+  box-shadow: 0px 0px 20px rgba(0,0,0, 0.5);
 }
 
 .modal-close {
+  z-index: 100;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 1rem;
+  right: 1rem;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  color: $color-light;
+  font-size: 3rem;
+  opacity: 0.5;
   cursor: pointer;
+  transition: transform .3s ease-in-out;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 @keyframes fadeIn {

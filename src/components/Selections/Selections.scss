@@ -28,7 +28,7 @@
   h2, h3, h4, p {
     color: inherit;
   }
-
+  
   @include mobile {
     .product-image {
       height: 15rem;

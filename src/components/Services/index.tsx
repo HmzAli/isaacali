@@ -49,7 +49,7 @@ const Services = () => {
   }, [])
 
   return (
-    <div className="services main-section">
+    <div className="services main-section" id="services">
       <div className="container">
         <h2 className="main-section__title" data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">What I offer</h2>
 
