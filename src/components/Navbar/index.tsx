@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import AboutMe from '../AboutMe';
 import './Navbar.scss'
 
 interface NavbarProps {
@@ -6,6 +8,13 @@ interface NavbarProps {
 }
 
 const Navbar = ({ isMenuOpen, closeMenu }: NavbarProps) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openAboutModal = () => {
+    closeMenu();
+    setIsModalOpen(true);
+  }
+
   return (
     <div className={`navbar ${isMenuOpen ? 'open' : ''}`}>
       <nav className={isMenuOpen ? 'open' : ''}>
@@ -17,13 +26,16 @@ const Navbar = ({ isMenuOpen, closeMenu }: NavbarProps) => {
             <a href="#projects" className="nav-link" onClick={closeMenu}>Project Showcase</a>
           </li>
           <li>
-            <a href="#about" className="nav-link" onClick={closeMenu}>About Me</a>
+            <a href="#about" className="nav-link" onClick={() => openAboutModal()}>About Me</a>
           </li>
           <li>
             <a href="#contact" className="nav-link" onClick={closeMenu}>Contact me</a>
           </li>
         </ul>
       </nav>
+
+      <AboutMe isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+
     </div>
   )
 }
