@@ -91,12 +91,25 @@ body {
         position: absolute;
         max-width: 333px;
         bottom: 0;
-        right: 0;
+        right: -36px;
+    }
+
+    @include desktop {
+        img {
+            max-width: 323px;
+        }
+    }
+
+    @include tablet {
+        img {
+            max-width: 323px;
+            right: -36px;
+        }
     }
 
     @include mobile {
         padding-bottom: 0;
-        
+
         img {
             position: relative;
             bottom: 0;

@@ -11,16 +11,16 @@ const Navbar = ({ isMenuOpen, closeMenu }: NavbarProps) => {
       <nav className={isMenuOpen ? 'open' : ''}>
         <ul className="nav-list">
           <li>
-            <a href="#menu" className="nav-link" onClick={closeMenu}>Services</a>
+            <a href="#services" className="nav-link" onClick={closeMenu}>Services</a>
           </li>
           <li>
-            <a href="#find-us" className="nav-link" onClick={closeMenu}>Project Showcase</a>
+            <a href="#projects" className="nav-link" onClick={closeMenu}>Project Showcase</a>
           </li>
           <li>
             <a href="#about" className="nav-link" onClick={closeMenu}>About Me</a>
           </li>
           <li>
-            <a href="#about" className="nav-link" onClick={closeMenu}>Contact me</a>
+            <a href="#contact" className="nav-link" onClick={closeMenu}>Contact me</a>
           </li>
         </ul>
       </nav>

@@ -57,6 +57,10 @@
     bottom: 0;
     margin: auto;
     display: none;
+
+    @include mobile {
+      display: block;
+    }
   }
 
   @include mobile {

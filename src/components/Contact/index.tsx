@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import ContactForm from '../ContactForm';
-import Modal from '../Modal';
 import './Contact.scss';
+import AboutMe from '../AboutMe';
 
 const Contact = () => {
-  const [isModalsOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return <>
     <div className="contact main-section" id="contact">
@@ -25,26 +25,7 @@ const Contact = () => {
           <img src="/isaac.webp" alt="Isaac" />
         </a>
 
-        <Modal isOpen={isModalsOpen} onClose={() => setIsModalOpen(false)}>
-          <div className="about-item">
-            <div className="about-item__content">
-              <div className="row">
-                <div className="col-md-8">
-                  <h3>About me</h3>
-                  <p>
-                    I'm a web developer with over 10 years of experience bringing digital designs to life for millions of users. I transform mockups into pixel-perfect, functional websites with technical precision and attention to detail.
-                  </p>
-
-                  <p>
-                    My expertise lies in enhancing the original designs with thoughtful implementation choices that improve usability and performance, delivering websites that both look stunning and achieve real results for clients.
-                  </p>
-                </div>
-              </div>
-
-              <img src="/isaac.webp" alt="Isaac" />
-            </div>
-          </div>
-        </Modal>
+        <AboutMe isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       </div>
     </div>
   </>

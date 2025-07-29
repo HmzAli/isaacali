@@ -2,11 +2,13 @@ import './Header.scss'
 import Navbar from '../Navbar'
 import { useState, useEffect } from 'react'
 import NavButton from '../NavButton'
+import AboutMe from '../AboutMe'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [isHomePage, setIsHomepage] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -63,7 +65,7 @@ const Header = () => {
                 </li>
 
                 <li>
-                  <a href="#about"> About Me </a>
+                  <a onClick={() => setIsModalOpen(true)}> About Me </a>
                 </li>
 
                 <li>
@@ -78,6 +80,7 @@ const Header = () => {
       </div>
 
       <Navbar isMenuOpen={isMenuOpen} closeMenu={() => setIsMenuOpen(false)} />
+      <AboutMe isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </header>
   )
 }
