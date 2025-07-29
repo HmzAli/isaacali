@@ -31,6 +31,10 @@
   }
   
   @include mobile {
+    .image-item-card {
+      border-radius: $card-border-radius !important;
+    }
+    
     .product-image {
       height: 15rem;
     }

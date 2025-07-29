@@ -139,7 +139,7 @@ const Selections = () => {
       <div className="container-fluid container-xl">
         <h2 className="main-section__title" data-aos="fade-in" data-aos-duration="500">Project Showcase </h2>
 
-        <div className="projects-wrapper" data-aos="fade-in" data-aos-duration="800" data-aos-delay="300">
+        <div className="projects-wrapper">
           <div className="row g-0">
             <div className="col-md-6 item-backdrop">
               <a className="link-item" onClick={() => openModal(0)}>
