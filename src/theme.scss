@@ -166,6 +166,12 @@ ul {
   }
 }
 
+.section-intro {
+  max-width: 38.889rem;
+  margin: auto;
+  text-align: center;
+}
+
 .content-wrapper {
   position: relative;
   max-width: 23.889rem;
@@ -560,4 +566,9 @@ iframe {
   right: 1rem;
   top: 1rem;
   cursor: pointer;
+}
+
+// Bootstrap overrides
+.alert-success {
+  background-color: #e5f9ed;
 }

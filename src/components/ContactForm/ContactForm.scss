@@ -1,0 +1,28 @@
+@use '../../variables' as *;
+
+.contact-form {
+  max-width: 500px;
+  color: $color-font;
+  padding: 2rem;
+  margin: auto;
+  border-radius: $card-border-radius;
+
+  .input-wrapper {
+    margin-bottom: 1rem;
+
+    input, textarea {
+      min-height: 50px;
+      background-color: $color-light;
+      color: $color-input;
+      font-size: .8rem;
+    }
+
+    textarea {
+      min-height: 180px;
+    }
+  }
+
+  .form-label {
+    margin-bottom: .3rem;
+  }
+}

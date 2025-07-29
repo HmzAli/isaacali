@@ -6,4 +6,15 @@
   z-index: 4;
   background-color: $color-tertiary;
   transform: translateY(-180px);
+  margin-bottom: -150px;
+
+  .section-intro {
+    max-width: 38.889rem;
+    margin: auto;
+  }
+
+  .form-wrapper {
+    max-width: 800px;
+    margin: auto;
+  }
 }
