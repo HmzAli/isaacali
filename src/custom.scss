@@ -117,6 +117,10 @@ body {
     @include mobile {
         padding-bottom: 0;
 
+        .about-item__content { 
+            max-height: 610px;
+        }
+
         img {
             position: relative;
             bottom: 0;
