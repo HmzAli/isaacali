@@ -40,7 +40,7 @@ const Header = () => {
 
   useEffect(() => {
     if (location.pathname === '/') {
-      setIsHomepage(true)
+      // setIsHomepage(true)
     }
   }, [])
 
