@@ -42,13 +42,9 @@ const Selections = () => {
                 <span>Delivery date:</span> <span className="date-text"> 2021 </span>
               </div>
 
-              <p>
-                As a long-time member of Muayfit gym, I had the pleasure of becoming acquainted with most of the staff at the PJ branch. My coach quickly learned about my profession and suggested I rebuild the gym's outdated official website.
-              </p>
+              <p>As a long-time member of Muayfit gym, I became acquainted with the staff at the PJ branch. My coach learned about my profession and suggested I rebuild the gym's outdated website.</p>
 
-              <p>
-                This project was one of the fastest from design to delivery that I've undertaken due to the tight deadline imposed by the gym's planned major event, which required the site's immediate launch. The simple design, aesthetics, and user experience of the resulting site were highly praised by both gym members and staff.
-              </p>
+              <p>This was one of my fastest projects from design to delivery due to a tight deadline for the gym's planned major event. The simple design and user experience were praised by both members and staff.</p>
 
               <a className="btn btn-primary mb-3" href="https://www.muayfit.com" target="_blank"> Open site </a>
             </div>
@@ -94,13 +90,9 @@ const Selections = () => {
                 <span>Delivery date:</span> <span className="date-text"> 2024 </span>
               </div>
 
-              <p>
-                Starting by designing bottle stickers for Flemonade, I established the foundation for their visual identity. Working with their provided typography, I developed a color scheme that would work across all their materials. The colors needed to feel authentic and clean, matching their handcrafted approach to making lemonade.
-              </p>
+              <p>Starting by designing bottle stickers for Flemonade, I helped establish their visual identity. Using their typography, I developed a color scheme that felt authentic and clean—matching their handcrafted lemonade approach.</p>
 
-              <p>
-                From there, I built their first website with clear sections covering their story and ordering process. The site organizes everything from ingredients to pickup locations, creating a straightforward digital presence for their craft beverage business.
-              </p>
+              <p>I then built their website with sections for their story and ordering process. The site covers ingredients to pickup locations, creating a simple digital presence for their craft beverage business.</p>
 
               <a className="btn btn-primary mb-3" href="https://flemonade.com" target="_blank"> Open site </a>
             </div>
@@ -122,13 +114,9 @@ const Selections = () => {
                 <span>Delivery date:</span> <span className="date-text"> 2022 </span>
               </div>
 
-              <p>
-                Edvance is a fintech startup that automates school fee collection and provides smart fee disbursement solutions. I've worked closely with Edward who gave me full ownership of development and delivery of both website and admin panel.
-                </p>
+              <p>Edvance is a fintech startup that automates school fee collection and provides smart fee disbursement solutions. I worked closely with Edward who gave me full ownership of developing and delivering both the website and admin panel.</p>
 
-              <p>
-                In contrast to my later projects, Edvance Digital presented a unique challenge with its scarce design assets. This required me to step into a significant design role alongside development, allowing me to make key aesthetic and UX decisions that defined the final product.
-              </p>
+              <p>Unlike my later projects, Edvance presented a unique challenge with scarce design assets. This required me to take on a significant design role alongside development, making key aesthetic and UX decisions that defined the final product.</p>
               
               <a className="btn btn-primary mb-3" href="https://www.edvance.school" target="_blank"> Open site </a>
             </div>
