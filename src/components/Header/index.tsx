@@ -7,7 +7,6 @@ import AboutMe from '../AboutMe'
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const [isHomePage, setIsHomepage] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleMenu = () => {
