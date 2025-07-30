@@ -46,7 +46,7 @@ const Header = () => {
   }, [])
 
   return (
-    <header id="header" className={(isScrolled) ? 'scrolled' : !isHomePage ? 'not-in-homepage' : '' } >
+    <header id="header" className={(isScrolled) ? 'scrolled' : '' } >
       <div className="header-outer">
         <div className="container-lg" data-aos="fade-in" data-aos-duration="500">
           <div className="row">
