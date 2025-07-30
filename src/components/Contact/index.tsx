@@ -13,7 +13,7 @@ const Contact = () => {
 
         <div className="section-intro" data-aos="fade-in" data-aos-duration="300">
           <p className="mb-3">Interested in building a beautiful web experience? Contact me anytime by filling the&nbsp;form below.</p>
-          <p>Rates and workflow details will be provided upon request.</p>
+          <p>Rates and workflow details will be provided <br /> upon request.</p>
         </div>
 
         <div className="form-wrapper">
