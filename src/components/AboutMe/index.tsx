@@ -14,7 +14,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ isOpen, onClose }) => {
             <div className="col-md-8">
               <h3>About me</h3>
               <p>
-                I'm a web developer with over 10 years of experience bringing digital designs to life for millions of users. <br />I transform ideas into pixel-perfect, high-performing websites with technical precision and attention to detail.
+                I'm a web developer with over 10 years of experience bringing digital designs to life for millions of users. <br />I transform ideas into beautiful, high-performing websites with technical precision and attention to detail.
               </p>
 
               <p>

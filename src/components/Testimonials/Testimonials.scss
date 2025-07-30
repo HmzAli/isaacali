@@ -54,6 +54,12 @@
     font-weight: 300;
   }
 
+  @include desktop {
+    .testimonials__item {
+      height: 525px;
+    }
+  }
+
   @include mobile {
     .testimonials__item { 
       padding: 1rem;
